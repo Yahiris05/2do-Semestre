@@ -1,0 +1,51 @@
+#Yahiris Enc. 24-1045
+
+#Funcion de Saludo
+def saludo(nombre):
+return f"Hola, {nombre}!"
+
+#Funcion de suma
+def suma(a, b):
+return a + b
+
+#Area de un triangulo
+def area_rectangulo(ancho, alto):
+  return ancho * alto
+
+#Numero par o impar
+def es_par(numero):
+return numero % 2 == 0
+
+#Conversion de grados Celcius a Fahrenheit
+def celsius_a_fahrenheit(celsius):
+return (celsius * 9/5) + 32
+
+#Maximo de tres numeros
+def maximo_de_tres(a, b, c):
+return max(a, b, c)
+
+#Palidromo
+def es_palindromo(palabra):
+return palabra == palabra[::-1]
+
+#Factorial
+def factorial(n):
+  if n == 0:
+      return 1
+  else:
+      return n * factorial(n-1)
+
+#Contar Vocales
+def contar_vocales(texto):
+  vocales = "aeiouAEIOU"
+  return sum(1 for letra in texto if letra in vocales)
+
+#Numero primos
+def es_primo(numero):
+  if numero < 2:
+      return False
+  for i in range(2, int(numero ** 0.5) + 1):
+      if numero % i == 0:
+          return False
+  return True
+  
